@@ -20,8 +20,10 @@ public class WordChanger {
 	 
 	
 	
-	//wordChanger constructor takes a string, integer, integer, string, integer, integer
-	public WordChanger(String w1, int s1, int e1, String w2, int s2, int e2){
+	/*wordChanger constructor takes a string, integer, integer, string, integer, integer
+	 * modifies the words provided in main
+	 */
+	public static String wordChanger(String w1, int s1, int e1, String w2, int s2, int e2){
 		word1 = w1;
 		start1 = s1;
 		end1 = e1;
@@ -29,19 +31,24 @@ public class WordChanger {
 		word2 = w2;
 		start2 = s2;
 		end2 = e2;
-	}
-	//modifies the words provided by WordChange constructor
-	public static String wordchange() {
-		String str1 = word1.substring(start1,end1);
-		String str2 = word2.substring(start2,end2);
 		
-		String str3 = str1 + str2;
+		end1 += 1;
+		end2 += 1;
+		
+		String mod1 = word1.substring(start1,end1);
+		String mod2 = word2.substring(start2,end2);
+		
+		String mod3 = mod1 + mod2;
 		//System.out.println(str3);
-		return str3;
+		return mod3;
+	}
+	//m
+	//public String wordchange() {
+
 
 	
 				
-	}
+	//}
 
 	
 

@@ -60,7 +60,8 @@ class Main {
 	  	  //WordChanger word = new WordChanger("Brian", 2, 3, "Wade", 0, 2);
 	  	  
 	  	  //System.out.println(word.wordchange());
-	  	  String newWord = wordChanger("Brian", 2, 3, "Wade", 0, 2);
+	  	  String newWord = WordChanger.wordChanger("Brian", 2, 3, "Wade", 0, 2);
+	  	  
 	  	  
 	  	  //System.out.println(newWord);
   	}
